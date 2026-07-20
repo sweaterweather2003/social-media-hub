@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jennerus Brands - Social Directory</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+        }
+        .brand-card {
+            transition: all 0.3s ease;
+        }
+        .brand-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+        .platform-section {
+            scroll-margin-top: 80px;
+        }
+        .nav-link {
+            transition: all 0.2s ease;
+        }
+        .nav-link.active {
+            border-bottom: 3px solid #0ea5e9;
+            color: #0ea5e9;
+            font-weight: 600;
+        }
+        .logo-img {
+            transition: transform 0.3s ease;
+        }
+        .brand-card:hover .logo-img {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <!-- Top Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="text-2xl font-bold text-slate-800">Jennerus</div>
+                <span class="text-slate-500 text-sm">Social Hub</span>
+            </div>
+            
+            <div class="flex gap-8 text-sm font-medium text-slate-600">
+                <a href="#brands" onclick="scrollToSection('brands')" class="nav-link cursor-pointer">Brands</a>
+                <a href="#platforms" onclick="scrollToSection('platforms')" class="nav-link cursor-pointer">Platforms</a>
+            </div>
+            
+            <div class="flex items-center gap-2 text-sm">
+                <a href="https://wa.me/919220765389" target="_blank" 
+                   class="flex items-center gap-2 bg-emerald-600 text-white px-5 py-2.5 rounded-2xl hover:bg-emerald-700 transition-colors">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <span>WhatsApp</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="max-w-7xl mx-auto px-6 py-12">
+        <!-- Hero Header -->
+        <div class="text-center mb-16">
+            <h1 class="text-5xl font-bold text-slate-900 mb-4">All Brands • One Hub</h1>
+            <p class="text-xl text-slate-600 max-w-lg mx-auto">Connect with Our Brands across all social platforms</p>
+        </div>
+
+        <!-- Brands Section -->
+        <!-- Brands Section -->
+<div id="brands" class="platform-section mb-20">
+    <div class="flex items-center gap-3 mb-8">
+        <h2 class="text-3xl font-bold text-slate-800">Our Brands</h2>
+        <div class="h-px flex-1 bg-slate-200"></div>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Dr. Diablow -->
+        <div class="brand-card bg-white rounded-3xl shadow overflow-hidden">
+            <div class="h-48 bg-[#8E9B88] flex items-center justify-center p-8">
+                <img src="dr.diablow.png" alt="Dr. Diablow" class="logo-img max-h-full w-auto">
+            </div>
+            <div class="p-6">
+                <h3 class="font-bold text-2xl mb-1">Dr. Diablow</h3>
+                <p class="text-slate-500 mb-6"></p>
+                <div class="grid grid-cols-2 gap-2">
+                    <a href="https://www.instagram.com/dr.diablow" target="_blank" class="text-center py-2 bg-gradient-to-r from-pink-500 to-purple-500 text-white rounded-xl font-medium"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://x.com/DrDiablow" target="_blank" class="text-center py-2 bg-black text-white rounded-xl font-medium"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.youtube.com/@Dr.Diablow" target="_blank" class="text-center py-2 bg-red-600 text-white rounded-xl font-medium"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.linkedin.com/showcase/drdiablow/" target="_blank" class="text-center py-2 bg-[#0A66C2] text-white rounded-xl font-medium"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://www.facebook.com/drdiablow" target="_blank" class="text-center py-2 bg-[#1877F2] text-white rounded-xl font-medium"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://in.pinterest.com/Drdiablowjennerus/" target="_blank" class="text-center py-2 bg-[#E60023] text-white rounded-xl font-medium"><i class="fa-brands fa-pinterest-p"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Rinse It -->
+        <div class="brand-card bg-white rounded-3xl shadow overflow-hidden">
+            <div class="h-48 bg-[#DCE6F1] flex items-center justify-center p-8">
+                <img src="rinseit.png" alt="Rinse It" class="logo-img max-h-full w-auto">
+            </div>
+            <div class="p-6">
+                <h3 class="font-bold text-2xl mb-1">Rinse It</h3>
+                <p class="text-slate-500 mb-6"></p>
+                <div class="grid grid-cols-2 gap-2">
+                    <a href="https://www.instagram.com/rinseit.oral?igsh=OGZkYWJiamJpNGsx" target="_blank" class="text-center py-2 bg-gradient-to-r from-pink-500 to-purple-500 text-white rounded-xl font-medium"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://x.com/Rinse_It" target="_blank" class="text-center py-2 bg-black text-white rounded-xl font-medium"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://youtube.com/@rinse-itoral" target="_blank" class="text-center py-2 bg-red-600 text-white rounded-xl font-medium"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.linkedin.com/showcase/rinse-it/" target="_blank" class="text-center py-2 bg-[#0A66C2] text-white rounded-xl font-medium"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61571566025185" target="_blank" class="text-center py-2 bg-[#1877F2] text-white rounded-xl font-medium"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://in.pinterest.com/Rinseitoral/" target="_blank" class="text-center py-2 bg-[#E60023] text-white rounded-xl font-medium"><i class="fa-brands fa-pinterest-p"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Wilrich Myer -->
+        <div class="brand-card bg-white rounded-3xl shadow overflow-hidden">
+            <div class="h-48 bg-[#EDFBE2] flex items-center justify-center p-8">
+                <img src="wilrichmyer.png" alt="Wilrich Myer" class="logo-img max-h-full w-auto">
+            </div>
+            <div class="p-6">
+                <h3 class="font-bold text-2xl mb-1">Wilrich Myer</h3>
+                <p class="text-slate-500 mb-6"></p>
+                <div class="grid grid-cols-2 gap-2">
+                    <a href="https://www.instagram.com/wilrichmyer?igsh=MThobGswaW5qOXkycw==" target="_blank" class="text-center py-2 bg-gradient-to-r from-pink-500 to-purple-500 text-white rounded-xl font-medium"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://x.com/WilrichMyer" target="_blank" class="text-center py-2 bg-black text-white rounded-xl font-medium"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://youtube.com/@wilrichmyerindia" target="_blank" class="text-center py-2 bg-red-600 text-white rounded-xl font-medium"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.linkedin.com/showcase/wilrichmyer/" target="_blank" class="text-center py-2 bg-[#0A66C2] text-white rounded-xl font-medium"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://www.facebook.com/share/1NYE8xErgr/?mibextid=wwXIfr" target="_blank" class="text-center py-2 bg-[#1877F2] text-white rounded-xl font-medium"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://in.pinterest.com/wilrichmyer/" target="_blank" class="text-center py-2 bg-[#E60023] text-white rounded-xl font-medium"><i class="fa-brands fa-pinterest-p"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tanttu -->
+        <div class="brand-card bg-white rounded-3xl shadow overflow-hidden">
+            <div class="h-48 bg-[#D1E7DD] flex items-center justify-center p-8">
+                <img src="tanttu.png" alt="Tanttu" class="logo-img max-h-full w-auto">
+            </div>
+            <div class="p-6">
+                <h3 class="font-bold text-2xl mb-1">Tanttu</h3>
+                <p class="text-slate-500 mb-6"></p>
+                <div class="grid grid-cols-2 gap-2">
+                    <a href="https://www.instagram.com/tanttu.hair?igsh=aHdnMmZhYzIxbjdo" target="_blank" class="text-center py-2 bg-gradient-to-r from-pink-500 to-purple-500 text-white rounded-xl font-medium"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://x.com/Tanttu_India" target="_blank" class="text-center py-2 bg-black text-white rounded-xl font-medium"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.youtube.com/@Tanttuhair" target="_blank" class="text-center py-2 bg-red-600 text-white rounded-xl font-medium"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.linkedin.com/showcase/tanttu/" target="_blank" class="text-center py-2 bg-[#0A66C2] text-white rounded-xl font-medium"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://www.facebook.com/tanttu" target="_blank" class="text-center py-2 bg-[#1877F2] text-white rounded-xl font-medium"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://in.pinterest.com/TanttuIndia/" target="_blank" class="text-center py-2 bg-[#E60023] text-white rounded-xl font-medium"><i class="fa-brands fa-pinterest-p"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Kerabeaute -->
+        <div class="brand-card bg-white rounded-3xl shadow overflow-hidden">
+            <div class="h-48 bg-[#109FA2] flex items-center justify-center p-8">
+                <img src="kerabeaute_logo.png" alt="Kerabeaute" class="logo-img max-h-full w-auto">
+            </div>
+            <div class="p-6">
+                <h3 class="font-bold text-2xl mb-1">Kerabeaute</h3>
+                <p class="text-slate-500 mb-6"></p>
+                <div class="grid grid-cols-2 gap-2">
+                    <a href="https://www.instagram.com/kerabeaute.hair?igsh=MWJ0eGh0dTNqYmhvcA==" target="_blank" class="text-center py-2 bg-gradient-to-r from-pink-500 to-purple-500 text-white rounded-xl font-medium"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://x.com/Kerabeautehair" target="_blank" class="text-center py-2 bg-black text-white rounded-xl font-medium"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://youtube.com/@kerabeautehair" target="_blank" class="text-center py-2 bg-red-600 text-white rounded-xl font-medium"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.linkedin.com/showcase/kerabeaute/" target="_blank" class="text-center py-2 bg-[#0A66C2] text-white rounded-xl font-medium"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://www.facebook.com/share/1KmRnT2RNt/?mibextid=wwXIfr" target="_blank" class="text-center py-2 bg-[#1877F2] text-white rounded-xl font-medium"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://in.pinterest.com/kerabeaute/" target="_blank" class="text-center py-2 bg-[#E60023] text-white rounded-xl font-medium"><i class="fa-brands fa-pinterest-p"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>  
+        <!-- Platforms Section -->
+        <div id="platforms" class="platform-section">
+            <div class="flex items-center gap-3 mb-8">
+                <h2 class="text-3xl font-bold text-slate-800">Platforms Directory</h2>
+                <div class="h-px flex-1 bg-slate-200"></div>
+            </div>
+
+            <!-- Instagram -->
+            <div class="mb-16">
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-12 h-12 bg-gradient-to-tr from-pink-500 via-red-500 to-purple-600 rounded-2xl flex items-center justify-center text-white text-2xl"><i class="fa-brands fa-instagram"></i></div>
+                    <div>
+                        <h3 class="text-2xl font-bold">Instagram</h3>
+                        <p class="text-slate-500">Follow our visual journeys</p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <a href="https://www.instagram.com/rinseit.oral" target="_blank" class="group flex gap-4 bg-white p-5 rounded-3xl hover:bg-pink-50 transition-all items-center">
+                        <img src="rinseit.png" class="w-12 h-12 object-contain rounded-xl" alt="">
+                        <div class="flex-1">
+                            <div class="font-semibold">Rinse It</div>
+                            <div class="text-sm text-slate-500">@rinseit.oral</div>
+                        </div>
+                        <span class="text-pink-500 group-hover:translate-x-1 transition">→</span>
+                    </a>
+                    <a href="https://www.instagram.com/tanttu.hair" target="_blank" class="group flex gap-4 bg-white p-5 rounded-3xl hover:bg-pink-50 transition-all items-center">
+                        <img src="tanttu.png" class="w-12 h-12 object-contain rounded-xl" alt="">
+                        <div class="flex-1">
+                            <div class="font-semibold">Tanttu</div>
+                            <div class="text-sm text-slate-500">@tanttu.hair</div>
+                        </div>
+                        <span class="text-pink-500 group-hover:translate-x-1 transition">→</span>
+                    </a>
+                    <a href="https://www.instagram.com/kerabeaute.hair" target="_blank" class="group flex gap-4 bg-white p-5 rounded-3xl hover:bg-pink-50 transition-all items-center">
+                        <img src="kerabeaute_logo.png" class="w-12 h-12 object-contain rounded-xl" alt="">
+                        <div class="flex-1">
+                            <div class="font-semibold">Kerabeaute</div>
+                            <div class="text-sm text-slate-500">@kerabeaute.hair</div>
+                        </div>
+                        <span class="text-pink-500 group-hover:translate-x-1 transition">→</span>
+                    </a>
+                    <a href="https://www.instagram.com/wilrichmyer" target="_blank" class="group flex gap-4 bg-white p-5 rounded-3xl hover:bg-pink-50 transition-all items-center">
+                        <img src="wilrichmyer.png" class="w-12 h-12 object-contain rounded-xl" alt="">
+                        <div class="flex-1">
+                            <div class="font-semibold">Wilrich Myer</div>
+                            <div class="text-sm text-slate-500">@wilrichmyer</div>
+                        </div>
+                        <span class="text-pink-500 group-hover:translate-x-1 transition">→</span>
+                    </a>
+                    <a href="https://www.instagram.com/dr.diablow" target="_blank" class="group flex gap-4 bg-white p-5 rounded-3xl hover:bg-pink-50 transition-all items-center">
+                        <img src="dr.diablow.png" class="w-12 h-12 object-contain rounded-xl" alt="">
+                        <div class="flex-1">
+                            <div class="font-semibold">Dr. Diablow</div>
+                            <div class="text-sm text-slate-500">@dr.diablow</div>
+                        </div>
+                        <span class="text-pink-500 group-hover:translate-x-1 transition">→</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- YouTube -->
+            <div class="mb-16">
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-12 h-12 bg-red-600 rounded-2xl flex items-center justify-center text-white text-2xl"><i class="fa-brands fa-youtube"></i></div>
+                    <div>
+                        <h3 class="text-2xl font-bold">YouTube</h3>
+                        <p class="text-slate-500">Watch our latest videos</p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <a href="https://youtube.com/@rinse-itoral" target="_blank" class="group flex gap-4 bg-white p-5 rounded-3xl hover:bg-red-50 transition-all items-center">
+                        <img src="rinseit.png" class="w-12 h-12 object-contain rounded-xl" alt="">
+                        <div class="flex-1">
+                            <div class="font-semibold">Rinse It</div>
+                            <div class="text-sm text-slate-500">@rinse-itoral</div>
+                        </div>
+                        <span class="text-red-500 group-hover:translate-x-1 transition">→</span>
+                    </a>
+                    <a href="https://www.youtube.com/@Tanttuhair" target="_blank" class="group flex gap-4 bg-white p-5 rounded-3xl hover:bg-red-50 transition-all items-center">
+                        <img src="tanttu.png" class="w-12 h-12 object-contain rounded-xl" alt="">
+                        <div class="flex-1">
+                            <div class="font-semibold">Tanttu</div>
+                            <div class="text-sm text-slate-500">@Tanttuhair</div>
+                        </div>
+                        <span class="text-red-500 group-hover:translate-x-1 transition">→</span>
+                    </a>
+                    <a href="https://youtube.com/@kerabeautehair" target="_blank" class="group flex gap-4 bg-white p-5 rounded-3xl hover:bg-red-50 transition-all items-center">
+                        <img src="kerabeaute_logo.png" class="w-12 h-12 object-contain rounded-xl" alt="">
+                        <div class="flex-1">
+                            <div class="font-semibold">Kerabeaute</div>
+                            <div class="text-sm text-slate-500">@kerabeautehair</div>
+                        </div>
+                        <span class="text-red-500 group-hover:translate-x-1 transition">→</span>
+                    </a>
+                    <a href="https://youtube.com/@wilrichmyerindia" target="_blank" class="group flex gap-4 bg-white p-5 rounded-3xl hover:bg-red-50 transition-all items-center">
+                        <img src="wilrichmyer.png" class="w-12 h-12 object-contain rounded-xl" alt="">
+                        <div class="flex-1">
+                            <div class="font-semibold">Wilrich Myer</div>
+                            <div class="text-sm text-slate-500">@wilrichmyerindia</div>
+                        </div>
+                        <span class="text-red-500 group-hover:translate-x-1 transition">→</span>
+                    </a>
+                    <a href="https://www.youtube.com/@Dr.Diablow" target="_blank" class="group flex gap-4 bg-white p-5 rounded-3xl hover:bg-red-50 transition-all items-center">
+                        <img src="dr.diablow.png" class="w-12 h-12 object-contain rounded-xl" alt="">
+                        <div class="flex-1">
+                            <div class="font-semibold">Dr. Diablow</div>
+                            <div class="text-sm text-slate-500">@Dr.Diablow</div>
+                        </div>
+                        <span class="text-red-500 group-hover:translate-x-1 transition">→</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- X / Twitter -->
+            <div class="mb-16">
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-12 h-12 bg-black rounded-2xl flex items-center justify-center text-white text-2xl"><i class="fa-brands fa-x-twitter"></i></div>
+                    <div>
+                        <h3 class="text-2xl font-bold">X (Twitter)</h3>
+                        <p class="text-slate-500">Stay updated with real-time news</p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <a href="https://x.com/Rinse_It" target="_blank" class="group flex gap-4 bg-white p-5 rounded-3xl hover:bg-slate-100 transition-all items-center">
+                        <img src="rinseit.png" class="w-12 h-12 object-contain rounded-xl" alt="">
+                        <div class="flex-1">
+                            <div class="font-semibold">Rinse It</div>
+                            <div class="text-sm text-slate-500">@Rinse_It</div>
+                        </div>
+                        <span class="text-slate-700 group-hover:translate-x-1 transition">→</span>
+                    </a>
+                    <a href="https://x.com/Tanttu_India" target="_blank" class="group flex gap-4 bg-white p-5 rounded-3xl hover:bg-slate-100 transition-all items-center">
+                        <img src="tanttu.png" class="w-12 h-12 object-contain rounded-xl" alt="">
+                        <div class="flex-1">
+                            <div class="font-semibold">Tanttu</div>
+                            <div class="text-sm text-slate-500">@Tanttu_India</div>
+                        </div>
+                        <span class="text-slate-700 group-hover:translate-x-1 transition">→</span>
+                    </a>
+                    <a href="https://x.com/Kerabeautehair" target="_blank" class="group flex gap-4 bg-white p-5 rounded-3xl hover:bg-slate-100 transition-all items-center">
+                        <img src="kerabeaute_logo.png" class="w-12 h-12 object-contain rounded-xl" alt="">
+                        <div class="flex-1">
+                            <div class="font-semibold">Kerabeaute</div>
+                            <div class="text-sm text-slate-500">@Kerabeautehair</div>
+                        </div>
+                        <span class="text-slate-700 group-hover:translate-x-1 transition">→</span>
+                    </a>
+                    <a href="https://x.com/WilrichMyer" target="_blank" class="group flex gap-4 bg-white p-5 rounded-3xl hover:bg-slate-100 transition-all items-center">
+                        <img src="wilrichmyer.png" class="w-12 h-12 object-contain rounded-xl" alt="">
+                        <div class="flex-1">
+                            <div class="font-semibold">Wilrich Myer</div>
+                            <div class="text-sm text-slate-500">@WilrichMyer</div>
+                        </div>
+                        <span class="text-slate-700 group-hover:translate-x-1 transition">→</span>
+                    </a>
+                    <a href="https://x.com/DrDiablow" target="_blank" class="group flex gap-4 bg-white p-5 rounded-3xl hover:bg-slate-100 transition-all items-center">
+                        <img src="dr.diablow.png" class="w-12 h-12 object-contain rounded-xl" alt="">
+                        <div class="flex-1">
+                            <div class="font-semibold">Dr. Diablow</div>
+                            <div class="text-sm text-slate-500">@DrDiablow</div>
+                        </div>
+                        <span class="text-slate-700 group-hover:translate-x-1 transition">→</span>
+                    </a>
+                </div>
+            </div>
+            <!-- LinkedIn -->
+    <div class="mb-16">
+        <div class="flex items-center gap-4 mb-6">
+            <div class="w-12 h-12 bg-[#0A66C2] rounded-2xl flex items-center justify-center text-white text-2xl"><i class="fa-brands fa-linkedin-in"></i></div>
+            <div>
+                <h3 class="text-2xl font-bold">LinkedIn</h3>
+                <p class="text-slate-500">Connect with our business showcases</p>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <a href="https://www.linkedin.com/showcase/wilrichmyer/" target="_blank" class="group flex gap-4 bg-white p-5 rounded-3xl hover:bg-blue-50 transition-all items-center">
+                <img src="wilrichmyer.png" class="w-12 h-12 object-contain rounded-xl" alt="">
+                <div class="flex-1"><div class="font-semibold">Wilrich Myer</div><div class="text-sm text-slate-500">@wilrichmyer</div></div>
+                <span class="text-blue-600 group-hover:translate-x-1 transition">→</span>
+            </a>
+            <a href="https://www.linkedin.com/showcase/kerabeaute/" target="_blank" class="group flex gap-4 bg-white p-5 rounded-3xl hover:bg-blue-50 transition-all items-center">
+                <img src="kerabeaute_logo.png" class="w-12 h-12 object-contain rounded-xl" alt="">
+                <div class="flex-1"><div class="font-semibold">Kerabeaute</div><div class="text-sm text-slate-500">@kerabeaute</div></div>
+                <span class="text-blue-600 group-hover:translate-x-1 transition">→</span>
+            </a>
+            <a href="https://www.linkedin.com/showcase/rinse-it/" target="_blank" class="group flex gap-4 bg-white p-5 rounded-3xl hover:bg-blue-50 transition-all items-center">
+                <img src="rinseit.png" class="w-12 h-12 object-contain rounded-xl" alt="">
+                <div class="flex-1"><div class="font-semibold">Rinse It</div><div class="text-sm text-slate-500">@rinse-it</div></div>
+                <span class="text-blue-600 group-hover:translate-x-1 transition">→</span>
+            </a>
+            <a href="https://www.linkedin.com/showcase/tanttu/" target="_blank" class="group flex gap-4 bg-white p-5 rounded-3xl hover:bg-blue-50 transition-all items-center">
+                <img src="tanttu.png" class="w-12 h-12 object-contain rounded-xl" alt="">
+                <div class="flex-1"><div class="font-semibold">Tanttu</div><div class="text-sm text-slate-500">@tanttu</div></div>
+                <span class="text-blue-600 group-hover:translate-x-1 transition">→</span>
+            </a>
+            <a href="https://www.linkedin.com/showcase/drdiablow/" target="_blank" class="group flex gap-4 bg-white p-5 rounded-3xl hover:bg-blue-50 transition-all items-center">
+                <img src="dr.diablow.png" class="w-12 h-12 object-contain rounded-xl" alt="">
+                <div class="flex-1"><div class="font-semibold">Dr. Diablow</div><div class="text-sm text-slate-500">@drdiablow</div></div>
+                <span class="text-blue-600 group-hover:translate-x-1 transition">→</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Pinterest -->
+    <div class="mb-16">
+        <div class="flex items-center gap-4 mb-6">
+            <div class="w-12 h-12 bg-[#E60023] rounded-2xl flex items-center justify-center text-white text-2xl"><i class="fa-brands fa-pinterest-p"></i></div>
+            <div>
+                <h3 class="text-2xl font-bold">Pinterest</h3>
+                <p class="text-slate-500">Discover our visual boards</p>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <a href="https://in.pinterest.com/kerabeaute/" target="_blank" class="group flex gap-4 bg-white p-5 rounded-3xl hover:bg-red-50 transition-all items-center">
+                <img src="kerabeaute_logo.png" class="w-12 h-12 object-contain rounded-xl" alt="">
+                <div class="flex-1"><div class="font-semibold">Kerabeaute</div><div class="text-sm text-slate-500">@kerabeaute</div></div>
+                <span class="text-red-600 group-hover:translate-x-1 transition">→</span>
+            </a>
+            <a href="https://in.pinterest.com/TanttuIndia/" target="_blank" class="group flex gap-4 bg-white p-5 rounded-3xl hover:bg-red-50 transition-all items-center">
+                <img src="tanttu.png" class="w-12 h-12 object-contain rounded-xl" alt="">
+                <div class="flex-1"><div class="font-semibold">Tanttu</div><div class="text-sm text-slate-500">@TanttuIndia</div></div>
+                <span class="text-red-600 group-hover:translate-x-1 transition">→</span>
+            </a>
+            <a href="https://in.pinterest.com/wilrichmyer/" target="_blank" class="group flex gap-4 bg-white p-5 rounded-3xl hover:bg-red-50 transition-all items-center">
+                <img src="wilrichmyer.png" class="w-12 h-12 object-contain rounded-xl" alt="">
+                <div class="flex-1"><div class="font-semibold">Wilrich Myer</div><div class="text-sm text-slate-500">@wilrichmyer</div></div>
+                <span class="text-red-600 group-hover:translate-x-1 transition">→</span>
+            </a>
+            <a href="https://in.pinterest.com/rinseit/" target="_blank" class="group flex gap-4 bg-white p-5 rounded-3xl hover:bg-red-50 transition-all items-center">
+                <img src="rinseit.png" class="w-12 h-12 object-contain rounded-xl" alt="">
+                <div class="flex-1"><div class="font-semibold">Rinse It</div><div class="text-sm text-slate-500">@rinseit</div></div>
+                <span class="text-red-600 group-hover:translate-x-1 transition">→</span>
+            </a>
+            <a href="https://in.pinterest.com/drdiablow/" target="_blank" class="group flex gap-4 bg-white p-5 rounded-3xl hover:bg-red-50 transition-all items-center">
+                <img src="dr.diablow.png" class="w-12 h-12 object-contain rounded-xl" alt="">
+                <div class="flex-1"><div class="font-semibold">Dr. Diablow</div><div class="text-sm text-slate-500">@drdiablow</div></div>
+                <span class="text-red-600 group-hover:translate-x-1 transition">→</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Facebook -->
+    <div class="mb-16">
+        <div class="flex items-center gap-4 mb-6">
+            <div class="w-12 h-12 bg-[#1877F2] rounded-2xl flex items-center justify-center text-white text-2xl"><i class="fa-brands fa-facebook-f"></i></div>
+            <div>
+                <h3 class="text-2xl font-bold">Facebook</h3>
+                <p class="text-slate-500">Connect with us on Facebook</p>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <a href="https://www.facebook.com/share/1NYE8xErgr/?mibextid=wwXIfr" target="_blank" class="group flex gap-4 bg-white p-5 rounded-3xl hover:bg-blue-50 transition-all items-center">
+                <img src="wilrichmyer.png" class="w-12 h-12 object-contain rounded-xl" alt="">
+                <div class="flex-1"><div class="font-semibold">Wilrich Myer</div><div class="text-sm text-slate-500">@WilrichMyer</div></div>
+                <span class="text-blue-600 group-hover:translate-x-1 transition">→</span>
+            </a>
+            <a href="https://www.facebook.com/share/1KmRnT2RNt/?mibextid=wwXIfr" target="_blank" class="group flex gap-4 bg-white p-5 rounded-3xl hover:bg-blue-50 transition-all items-center">
+                <img src="kerabeaute_logo.png" class="w-12 h-12 object-contain rounded-xl" alt="">
+                <div class="flex-1"><div class="font-semibold">Kerabeaute</div><div class="text-sm text-slate-500">@Kerabeaute</div></div>
+                <span class="text-blue-600 group-hover:translate-x-1 transition">→</span>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61571566025185" target="_blank" class="group flex gap-4 bg-white p-5 rounded-3xl hover:bg-blue-50 transition-all items-center">
+                <img src="rinseit.png" class="w-12 h-12 object-contain rounded-xl" alt="">
+                <div class="flex-1"><div class="font-semibold">Rinse It</div><div class="text-sm text-slate-500">@RinseItoral</div></div>
+                <span class="text-blue-600 group-hover:translate-x-1 transition">→</span>
+            </a>
+            <a href="https://www.facebook.com/tanttu" target="_blank" class="group flex gap-4 bg-white p-5 rounded-3xl hover:bg-blue-50 transition-all items-center">
+                <img src="tanttu.png" class="w-12 h-12 object-contain rounded-xl" alt="">
+                <div class="flex-1"><div class="font-semibold">Tanttu</div><div class="text-sm text-slate-500">@Tanttu</div></div>
+                <span class="text-blue-600 group-hover:translate-x-1 transition">→</span>
+            </a>
+            <a href="https://www.facebook.com/drdiablow" target="_blank" class="group flex gap-4 bg-white p-5 rounded-3xl hover:bg-blue-50 transition-all items-center">
+                <img src="dr.diablow.png" class="w-12 h-12 object-contain rounded-xl" alt="">
+                <div class="flex-1"><div class="font-semibold">Dr. Diablow</div><div class="text-sm text-slate-500">@DrDiablow</div></div>
+                <span class="text-blue-600 group-hover:translate-x-1 transition">→</span>
+            </a>
+        </div>
+    </div>           
+
+    <script>
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
